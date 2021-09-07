@@ -5,16 +5,21 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand",
+    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --watch --runInBand ",
+    "test:cov": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --no-cache --runInBand --coverage"
   },
   "keywords": [],
   "author": "guilhermeais",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "pino": "^6.13.2",
+    "pretty-bytes": "^5.6.0"
   },
   "devDependencies": {
-    "jest": "^27.1.0"
+    "jest": "^27.1.0",
+    "pino-pretty": "^6.0.0"
   }
 }

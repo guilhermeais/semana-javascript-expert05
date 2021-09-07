@@ -1,0 +1,20 @@
+{
+  "name": "@guilhermeais/gdrive-webapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand"
+  },
+  "keywords": [],
+  "author": "guilhermeais",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
+}
